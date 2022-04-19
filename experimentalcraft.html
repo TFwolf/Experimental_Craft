@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental Craft</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="shortcut icon" href="image/logo.ico">
+    <style>
+        :root{
+            --background-color:rgba(137, 212, 103, .5);
+            --bording-color: rgba(0, 0, 0, .4);
+            --link-color: 32, 43, 141;
+            --box-shadow-color: 255, 255, 255;
+            --box-border: 1px solid #767676;
+        }
+        *{
+            cursor:default;
+        }
+        body{
+            background: url(image/EC_background2.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        a{
+            cursor: pointer;
+        }
+        #side{
+            width: 200px;
+            margin: 7px auto;
+            margin-top: -50px;
+            background-color: var(--background-color);
+            border-radius: 5px;
+            border: var(--box-border);
+            padding: 0.5em;
+            padding-top: 0.7em;
+            position: absolute;
+            top: auto;
+            left: 10%;
+            padding-left: 20px;
+            line-height: 2;
+            box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+        }
+        #side img{
+            margin-right: 10px;
+            position: relative;
+            top: 5px;
+        }
+        #side a{
+            text-decoration: underline;
+            color: rgb(var(--link-color));
+            font-size: 0.8em;
+        }
+        #side a:hover{
+            color: rgb(32, 32, 32);
+        }
+
+        #mainpage{
+            min-width: 600px;
+            width: 60%;
+            margin: 7px auto;
+            margin-top: -50px;
+            background-color: var(--background-color);
+            border-radius: 5px;
+            border: var(--box-border);
+            padding: 0.5em;
+            position: absolute;
+            top: auto;
+            left: 27%;
+            display: grid;
+            box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+        }
+        iframe{
+            margin: 5PX;
+            width: 560px;
+            height: 315px;
+            border: 5px double var(--bording-color);
+            border-radius: 30px;
+        }
+        @media only screen and (max-width:1250px){
+            #mainpage{
+                left: 31%;
+                width: 60%;
+            }
+            iframe{
+                width: 280px;
+                height: 162.5px;
+            }
+        }
+        hr{
+            margin: 0;
+            border: 0;
+            height: 1px;
+            background-color: var(--bording-color);
+        }
+        #side h1{
+            margin: 5px 3px;
+            font-size: 1em;
+            font-weight:100;
+            text-decoration: underline;
+            text-decoration-color: rgba(var(--link-color), 0.5);
+            color: rgba(0, 0, 0, 0.7);
+            text-underline-offset: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 100%/7em;
+            box-shadow: 0 0 5px rgba(var(--box-shadow-color), 0.6);
+        }
+        #side ul{
+            margin: 0;
+            padding: 0;
+        }
+        #side ul li{
+            list-style: none;
+        }
+        #side ul li ul{
+            margin-top: 100px;
+        }
+        #side ul li ul li{
+            background-color: rgba(0, 0, 0, .15);
+        }
+        #side ul li ul li p{
+            font-size: 0.8em;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        .click{
+            cursor:pointer;
+        }
+        .list{
+            position: relative;
+            display: contents;
+            text-align: center;
+        }
+        
+        #hederimg{
+            
+            width: 500px;
+            height: 111px;
+            display:flex;
+            position: relative;
+            top: -70px;
+            left: 25%;
+            text-decoration: underline;
+            color: #c0c0c0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div id="hederimg">
+        <img src="image/EC logo.png" alt="" height="100px" width="143">
+        <h1>
+            Experimental Craft
+        </h1>
+    </div>
+
+    <article id="side">
+      
+        <ul>
+            <li><img src="Hamburger Menu.svg" width="20">Menbres
+                <ul class="list">
+                    <li><a href="https://www.youtube.com/channel/UCA13xSMV2Tq3T5qrUQJ1GRg">TFWolf</a></li>
+                    <hr>
+                    <li><a href="https://www.youtube.com/channel/UCFwVlrMDXsvLWX3mu_s003A">Tchiche</a></li>
+                    <hr>
+                    <li><p>Lucaslepretre22</p></li>
+                    <hr>
+                    <li><p>Sorengran</p></li>
+                    <hr>
+                    <li><p>CosmoStars</p></li>
+                    
+                    <h1>Ancien manbres</h1>
+                    
+                    <li><p>Matto_x</p></li>
+                    <hr>
+                    <li><a href="https://www.youtube.com/channel/UCgxXg-8ntyQdiiSwtudBQ3w">Tarma_Gold</a></li>
+                    <hr>
+                    <li><p>Cabi</p></li>
+                    <hr>
+                    <li><a href="https://www.youtube.com/channel/UCH1-Y87b25QeefkEklrjS2A">Max Zasu</a></li>
+                    <hr>
+                    <li><p>LordVipor</p></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><img src="Hamburger Menu.svg" width="20">Maps DL
+                <ul class="list">
+                    <li><img src="image/Map DL icon.png" width="25"><a href="dl/Experimental craft S1.zip" download="">Saison 1</a></li>
+                    <hr>
+                    <li><img src="image/Map DL icon.png" width="25"><a href="" download="" style="text-decoration: line-through;" ><!--<img src="download-button-svgrepo-com.svg" width="20">-->Saison 2</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </article>
+
+    <article id="mainpage">
+        <iframe src="https://www.youtube.com/embed/LpBI3xnXflE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep9</iframe>
+        <iframe src="https://www.youtube.com/embed/2OrNuUs3uwk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep8</iframe>
+        <iframe src="https://www.youtube.com/embed/I8mC_HyFdMw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep7</iframe>
+        <iframe src="https://www.youtube.com/embed/5IDIObGwJao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep6</iframe>
+        <iframe src="https://www.youtube.com/embed/Mc0TeX0CQXE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>hs1</iframe>
+        <iframe src="https://www.youtube.com/embed/nQZNdL-aC_0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep5</iframe>
+        <iframe src="https://www.youtube.com/embed/p7G6L8eFiwM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep4</iframe>
+        <iframe src="https://www.youtube.com/embed/gL8RjKUglwY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep3</iframe>
+        <iframe src="https://www.youtube.com/embed/Rt3IECXEWyg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep2</iframe>
+        <iframe src="https://www.youtube.com/embed/-bpTRGiSrRo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep1</iframe>
+    </article>
+    
+</body>
+</html>
