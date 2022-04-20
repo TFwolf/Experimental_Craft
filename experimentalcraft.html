@@ -28,6 +28,37 @@
         a{
             cursor: pointer;
         }
+        
+        
+        #heder{
+            margin: auto;
+            width: 80%;
+            padding: 3px;
+            align-items: center;
+            background: rgba(35, 70, 26, 0.301);
+            border: 2px solid rgb(61, 61, 61);
+            border-radius: 15px;
+        }
+        .S1{
+            margin: auto;
+            width: 8rem;
+            background: -webkit-linear-gradient(-90deg, #eee, #555);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: underline;
+            text-decoration-color: #444;
+            text-underline-offset: 2px;
+            
+        }
+        .S2{
+            margin: auto;
+            width: 8rem;
+            background: -webkit-linear-gradient(-90deg, #91642b 10%, #fae187  50%, #5c3d14 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /*side*/
         #side{
             width: 200px;
             margin: 7px auto;
@@ -56,6 +87,36 @@
         }
         #side a:hover{
             color: rgb(32, 32, 32);
+        }
+        #side h1{
+            margin: 5px 3px;
+            font-size: 1em;
+            font-weight:100;
+            text-decoration: underline;
+            text-decoration-color: rgba(var(--link-color), 0.5);
+            color: rgba(0, 0, 0, 0.7);
+            text-underline-offset: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 100%/7em;
+            box-shadow: 0 0 5px rgba(var(--box-shadow-color), 0.6);
+        }
+        #side ul{
+            margin: 0;
+            padding: 0;
+        }
+        #side ul li{
+            list-style: none;
+        }
+        #side ul li ul{
+            margin-top: 100px;
+        }
+        #side ul li ul li{
+            background-color: rgba(0, 0, 0, .15);
+        }
+        #side ul li ul li p{
+            font-size: 0.8em;
+            margin: 0;
+            padding: 0;
         }
 
         #mainpage{
@@ -96,36 +157,7 @@
             height: 1px;
             background-color: var(--bording-color);
         }
-        #side h1{
-            margin: 5px 3px;
-            font-size: 1em;
-            font-weight:100;
-            text-decoration: underline;
-            text-decoration-color: rgba(var(--link-color), 0.5);
-            color: rgba(0, 0, 0, 0.7);
-            text-underline-offset: 2px;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 100%/7em;
-            box-shadow: 0 0 5px rgba(var(--box-shadow-color), 0.6);
-        }
-        #side ul{
-            margin: 0;
-            padding: 0;
-        }
-        #side ul li{
-            list-style: none;
-        }
-        #side ul li ul{
-            margin-top: 100px;
-        }
-        #side ul li ul li{
-            background-color: rgba(0, 0, 0, .15);
-        }
-        #side ul li ul li p{
-            font-size: 0.8em;
-            margin: 0;
-            padding: 0;
-        }
+        
         
 
         .click{
@@ -162,8 +194,7 @@
     </div>
 
     <article id="side">
-      
-        <ul>
+        <ul> <!--Membres-->
             <li><img src="Hamburger_Menu.svg" width="20">Membres
                 <ul class="list">
                     <li><a href="https://www.youtube.com/channel/UCA13xSMV2Tq3T5qrUQJ1GRg">TFWolf</a></li>
@@ -190,7 +221,7 @@
                 </ul>
             </li>
         </ul>
-        <ul>
+        <ul> <!--maps-->
             <li><img src="Hamburger_Menu.svg" width="20">Maps DL
                 <ul class="list">
                     <li><img src="image/Map DL icon.png" width="25"><a href="https://download857.mediafire.com/co2tk6gfsmpg/rrnx6svvahqiwe1/Experimental+craft+S1.zip" download="">Saison 1</a></li>
@@ -203,6 +234,7 @@
     </article>
 
     <article id="mainpage">
+        <div id="heder" class="HS1"><h1 class="S1"><i>Saison 1</i></h1></div>
         <iframe src="https://www.youtube.com/embed/bskMYyHvgfQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep9</iframe>
         <iframe src="https://www.youtube.com/embed/LpBI3xnXflE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep9</iframe>
         <iframe src="https://www.youtube.com/embed/2OrNuUs3uwk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep8</iframe>
