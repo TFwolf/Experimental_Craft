@@ -1,39 +1,24 @@
-@import "colors.css";
+:root{
+    --background-color:rgba(137, 212, 103, .5);
+    --bording-color: rgba(0, 0, 0, .4);
+    --link-color: 32, 43, 141;
+    --box-shadow-color: 255, 255, 255;
+    --box-border: 1px solid #767676;
+}
+*{
+    cursor:default;
+}
+*,:after,:before{
+    -webkit-box-sizing:inherit;
+}
+html{
+    -webkit-box-sizing:border-box;
+}
 
 body{
-    background: url(image/background\ image.jpg);
+    background: url(image/EC_background2.png);
     background-size: cover;
     background-attachment: fixed;
-}
-
-.header{
-    width: 100%;
-    height: 80px;
-    display: block;
-    background: rgba(84, 141, 58, 0.836);
-}
-.inner_header{
-    width: 80%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    background-color: rgba(84, 141, 58, 0.836);
-}
-.logo_container{
-    height: 100%;
-    display: table;
-    float: left;
-}
-.logo_container img{
-    height: 50%;
-    display: table-cell;
-    vertical-align: middle;
-
-}
-
-
-
-body{
     background-color: #89e081;
     padding-top: 100px;
     padding-bottom: 60px;
@@ -41,81 +26,180 @@ body{
     font-family: village;
     font-size: 130%;
 }
-
-#mainpage{
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgba(137, 212, 103, 0.767);
-    padding: 50px;
-    /*padding-top: 20px;*/
-    align-content: center;
-
-}
-
-#mainpagewenside{
-    width: 60%;
-    margin: 7px auto;
-    background-color: rgba(137, 212, 103, 0.767);
-    padding: 50px;
-    /*padding-top: 20px;*/
-    align-content: absolute;
-    top: auto;
-    left: 1000px;
-
-}
-
-#mainpageside{
-    width: 20%;
-    margin: 7px auto;
-    background-color: rgba(137, 212, 103, 0.767);
-    padding: 0.5em;
-    padding-left: 0.7em;
-    position: absolute;
-    top: auto;
-    left: 100px;
-}
-
-#heder1
-{
-    box-shadow: 2px 2px 3px #606060;
-    background: #3F9337;
-    background-size: 5px 5px;
-    font-size: 130%;
-    font-weight: bold;
-    padding: 1px; color:#ffffff;
-    text-align: center;
-    border-radius:10px;
-    border:2px solid #AEC50B
-}
-
 a{
-    color:var(--theme-link-color);
-    text-decoration:none;
+    cursor: pointer;
     -webkit-transition:color .3s;
     transition:color .3s
 }
-a:hover{
-    color:var(--theme-link-color--hover);
-    text-decoration:underline
+
+
+#heder{
+    margin: auto;
+    width: 80%;
+    padding: 3px;
+    align-items: center;
+    background: rgba(35, 70, 26, 0.301);
+    border: 2px solid rgb(61, 61, 61);
+    border-radius: 15px;
+}
+.S1{
+    margin: auto;
+    width: 8rem;
+    background: -webkit-linear-gradient(-90deg, #eee, #555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #444;
+    text-underline-offset: 2px;
+    
+}
+.S2{
+    margin: auto;
+    width: 8rem;
+    background: -webkit-linear-gradient(-90deg, #91642b 10%, #fae187  50%, #5c3d14 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*side*/
+#side{
+    width: 200px;
+    margin: 7px auto;
+    margin-top: -50px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: var(--box-border);
+    padding: 0.5em;
+    padding-top: 0.7em;
+    position: absolute;
+    top: auto;
+    left: 10%;
+    padding-left: 20px;
+    line-height: 2;
+    box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+}
+#side img{
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+#side a{
+    text-decoration: underline;
+    color: rgb(var(--link-color));
+    font-size: 0.8em;
+}
+#side a:hover{
+    color: rgb(32, 32, 32);
+}
+#side h1{
+    margin: 5px 3px;
+    font-size: 1em;
+    font-weight:100;
+    text-decoration: underline;
+    text-decoration-color: rgba(var(--link-color), 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-underline-offset: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 100%/7em;
+    box-shadow: 0 0 5px rgba(var(--box-shadow-color), 0.6);
+}
+#side ul{
+    margin: 0;
+    padding: 0;
+}
+#side ul li{
+    list-style: none;
+}
+#side ul li ul{
+    margin-top: 100px;
+}
+#side ul li ul li{
+    background-color: rgba(0, 0, 0, .15);
+}
+#side ul li ul li p{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+#mainpage{
+    min-width: 600px;
+    width: 60%;
+    margin: 7px auto;
+    margin-top: -50px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: var(--box-border);
+    padding: 0.5em;
+    position: absolute;
+    top: auto;
+    left: 27%;
+    display: grid;
+    box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+}
+iframe{
+    margin: 5PX;
+    width: 560px;
+    height: 315px;
+    border: 5px double var(--bording-color);
+    border-radius: 30px;
+}
+@media only screen and (max-width:1250px){
+    #mainpage{
+        left: 31%;
+        width: 60%;
+    }
+    iframe{
+        width: 280px;
+        height: 162.5px;
+    }
+}
+hr{
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background-color: var(--bording-color);
+}
+
+
+
+.click{
+    cursor:pointer;
+}
+.list{
+    position: relative;
+    display: contents;
+    text-align: center;
+}
+
+#hederimg{
+    
+    width: 500px;
+    height: 111px;
+    display:flex;
+    position: relative;
+    top: -70px;
+    left: 25%;
+    text-decoration: underline;
+    color: #c0c0c0;
 }
 
 /* Custom Scrollbar */
-/* * Created by Anonminati (https: //wikisource.wikia.com);*/
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	background: url('image/Lava_strip_TDS_GN.png') right center no-repeat;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: url('image/Lava_strip_TDS_GN.png') right center no-repeat;
     background-color: rgb(37, 105, 31);
     background-size: cover;
-	border-radius: 10px;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar {
-	background-color: rgba(51, 143, 43, 0);
-	width: 17px;
+    background-color: rgba(51, 143, 43, 0);
+    width: 17px;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: #000;
-	background: /*url() center center no-repeat,*/ linear-gradient(155deg, rgb(51, 143, 43), rgba(51, 143, 43, 0.459));
-	border: 4px double rgba(0, 0, 0, .5);
+    background-color: #000;
+    background: /*url() center center no-repeat,*/ linear-gradient(155deg, rgb(51, 143, 43), rgba(51, 143, 43, 0.459));
+    border: 4px double rgba(0, 0, 0, .5);
     border-radius: 10px;
     background-size: cover;
     box-shadow: 0px 0px 30px rgb(230, 198, 15);
