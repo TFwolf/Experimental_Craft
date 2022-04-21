@@ -7,6 +7,8 @@
 }
 *{
     cursor:default;
+    transition: .3s;
+    transition-delay: .2s;
 }
 *,:after,:before{
     -webkit-box-sizing:inherit;
@@ -28,7 +30,7 @@ body{
 }
 a{
     cursor: pointer;
-    -webkit-transition:color .3s;
+    -webkit-transition: .3s;
     transition:color .3s
 }
 
@@ -74,17 +76,15 @@ a{
 
 #side,
 #mainpage{
-    padding: 0.5em;
-    padding-top: 0;
-    box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
     background-color: var(--background-color);
-    border-radius: 5px;
     border: var(--box-border);
+    box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+    border-radius: 5px;
 }
 
 #side{
+    padding: 0.5em;
     width: 200px;
-    padding-top: 0.7em;
     line-height: 2;
     height: fit-content;
 }
@@ -103,9 +103,12 @@ a{
 
 
 #side img{
-    margin-right: 10px;
+    margin: auto 10px;
     position: relative;
     top: 5px;
+}
+#side ul li ul img{
+    margin-left: 0;
 }
 #side a{
     text-decoration: underline;
@@ -113,7 +116,7 @@ a{
     font-size: 0.8em;
 }
 #side a:hover{
-    color: rgb(32, 32, 32);
+    color: #ccc;
 }
 #side h1{
     margin: 5px 3px;
@@ -130,15 +133,17 @@ a{
 #side ul{
     margin: 0;
     padding: 0;
-}
-#side ul li{
     list-style: none;
 }
-#side ul li ul{
-    margin-top: 100px;
+#side ul li ul {
+    text-align: center;
 }
 #side ul li ul li{
     background-color: rgba(0, 0, 0, .15);
+}
+#side ul li ul li:hover{
+    margin: 7px;
+    border-radius: 15px;
 }
 #side ul li ul li p{
     font-size: 0.8em;
@@ -151,7 +156,7 @@ iframe{
     border: 5px double var(--bording-color);
     border-radius: 30px;
 }
-@media only screen and (max-width:1250px){
+@media screen and (max-width:1250px){
     iframe{
         width: 280px;
         height: 162.5px;
@@ -166,14 +171,7 @@ hr{
 
 
 
-.click{
-    cursor:pointer;
-}
-.list{
-    position: relative;
-    display: contents;
-    text-align: center;
-}
+
 
 #hederimg{
     margin: 30px auto;
