@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me Contacter</title>
+
+        <link rel="shortcut icon" href="image/EC-logo.ico">
+    </head>
+    <style>
+        :root{
+            --background-color:rgba(137, 212, 103, .5);
+            --bording-color: rgba(0, 0, 0, .4);
+            --link-color: 32, 43, 141;
+            --box-shadow-color: 255, 255, 255;
+            --box-border: 1px solid #767676;
+
+            --theme-warning-color:#e76b3250;
+            --theme-success-color--rgb:11,106,43;
+            --theme-accent-color--hover:#cccccc;
+            --theme-page-text-color:#3a3a3a;
+            --theme-border-color:#729f6d; 
+        }
+
+        .container{
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .from-group{ 
+            width: 100%;
+            margin-top: 20px;
+        }
+        .from-group input,
+        .from-group textarea{
+            width: 100%;
+            padding: 5px;
+            font-size: 18px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: #ffffff80;
+        }
+        textarea{
+            resize: vertical;
+            max-height: 350px;
+            min-height: 200px;
+        }
+        button[type=submit]{
+            position:relative;
+            left: 25%;
+            width: 50%;
+            border: 2px solid var(--theme-border-color);
+            outline: none;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 10px;
+            font-family: village;
+            color: var(--theme-page-text-color);
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: .3s ease background-color;
+            background-color: #ffffff;
+        }
+        button[type=submit]:hover{
+            background-color: var(--theme-accent-color--hover);
+        }
+        #status{
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            margin: 20px  auto;
+            border-radius: 10px;
+        }
+        #status.success{
+            background-color: rgba(var(--theme-success-color--rgb),0.7);
+            border:2px solid rgba(21, 77, 39,7);
+            animation: status 4s ease forwards;
+        }
+        #status.error{
+            background-color: var(--theme-warning-color);
+            border:2px solid #f32b08;
+            color: white;
+            animation: status 4s ease forwards;
+        }
+        @keyframes status{
+            0%{
+                opacity: 1;
+                pointer-events: all;
+            }
+            90%{
+                opacity: 1;
+                pointer-events: all;
+            }
+            100%{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            #hederimg img{
+                display: none;
+            }
+            #hederimg{
+                justify-content: center;
+            }
+        }
+        .content{
+            max-width: 800px;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+        #mainpage{
+            box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+            background-color: var(--background-color);
+            border-radius: 5px;
+            border: var(--box-border);
+            min-width: 350px;
+            width: auto;
+            overflow: auto;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(image/EC_background2.png);
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #243a22;
+            color: #000;
+            font-family: village;
+            font-size: 130%;
+        }
+
+        #hederimg{
+            margin: 30px auto;
+            width: 500px;
+            height: 111px;
+            display:flex;
+            text-decoration: underline;
+            color: #c0c0c0;
+        }
+
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background: url('image/Lava_strip_TDS_GN.png') right center no-repeat;
+            background-color: rgb(47, 124, 40);
+            background-size: cover;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(51, 143, 43, 0.6);
+            border: 1px solid rgba(177, 177, 177, .7);
+            border-radius: 5px;
+            background-size: cover;
+            box-shadow: 0px 0px 30px rgb(230, 198, 15);
+        }
+    </style>
+    <body>
+        <div id="hederimg">
+            <img src="image/EC logo.png" alt="" height="100px" width="143">
+            <h1>
+                Experimental Craft
+            </h1>
+        </div>
+
+        <div class="content">
+            <article id="mainpage">
+                <section>
+                    <div class="container">
+                        <form action="https://formspree.io/f/xqknlvpq" method="post" id="my-form">
+                            <div class="from-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom">
+                            </div>
+                            <div class="from-group">
+                                <label for="nom">Email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="from-group">
+                                <label for="nom">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                        <div id="status"></div>
+                    </div>
+
+                </section>
+            </article>
+        </div>
+        <script src="form.js"></script>
+    </body>
+</html>
