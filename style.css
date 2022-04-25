@@ -21,6 +21,7 @@ body{
     margin: 0;
     padding: 0;
     background: url(image/EC_background2.png);
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-color: #243a22;
@@ -72,6 +73,9 @@ a{
     background: -webkit-linear-gradient(-90deg, #91642b 10%, #fae187  50%, #5c3d14 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #705026;
+    text-underline-offset: 2px;
 }
 
 #side,
