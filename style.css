@@ -7,6 +7,8 @@
 }
 *{
     cursor:default;
+    transition: .3s;
+    transition-delay: .2s;
 }
 *,:after,:before{
     box-sizing:inherit;
@@ -113,7 +115,7 @@ a{
     font-size: 0.8em;
 }
 #side a:hover{
-    color: rgb(32, 32, 32);
+    color: #ccc;
 }
 #side h1{
     margin: 5px 3px;
@@ -144,6 +146,10 @@ a{
     font-size: 0.8em;
     margin: 0;
     padding: 0;
+}
+#side ul li ul li:hover{
+    margin: 7px;
+    border-radius: 15px;
 }
 iframe{
     width: 560px;
