@@ -7,14 +7,12 @@
 }
 *{
     cursor:default;
-    transition: .3s;
-    transition-delay: .2s;
 }
 *,:after,:before{
-    -webkit-box-sizing:inherit;
+    box-sizing:inherit;
 }
 html{
-    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 body{
@@ -31,7 +29,7 @@ body{
 }
 a{
     cursor: pointer;
-    -webkit-transition: .3s;
+    -webkit-transition:color .3s;
     transition:color .3s
 }
 
@@ -42,7 +40,7 @@ a{
     height: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto 200px;
     grid-column-gap: 25px;
 }
 
@@ -73,17 +71,14 @@ a{
     background: -webkit-linear-gradient(-90deg, #91642b 10%, #fae187  50%, #5c3d14 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: underline;
-    text-decoration-color: #705026;
-    text-underline-offset: 2px;
 }
 
 #side,
 #mainpage{
-    background-color: var(--background-color);
-    border: var(--box-border);
     box-shadow: 0 0 10px rgba(var(--box-shadow-color), 0.6);
+    background-color: var(--background-color);
     border-radius: 5px;
+    border: var(--box-border);
 }
 
 #side{
@@ -97,22 +92,20 @@ a{
     min-width: 300px;
     width: auto;
     overflow: auto;
+    height: 70vh;
+    margin-bottom: 10vh;
 }
 #mainpage section{
     display: grid;
-    height: 65vh;
     justify-content: center;
     grid-row-gap: 15px;
 }
 
 
 #side img{
-    margin: auto 10px;
+    margin-right: 10px;
     position: relative;
     top: 5px;
-}
-#side ul li ul img{
-    margin-left: 0;
 }
 #side a{
     text-decoration: underline;
@@ -120,7 +113,7 @@ a{
     font-size: 0.8em;
 }
 #side a:hover{
-    color: #ccc;
+    color: rgb(32, 32, 32);
 }
 #side h1{
     margin: 5px 3px;
@@ -137,17 +130,15 @@ a{
 #side ul{
     margin: 0;
     padding: 0;
+}
+#side ul li{
     list-style: none;
 }
-#side ul li ul {
-    text-align: center;
+#side ul li ul{
+    margin-top: 100px;
 }
 #side ul li ul li{
     background-color: rgba(0, 0, 0, .15);
-}
-#side ul li ul li:hover{
-    margin: 7px;
-    border-radius: 15px;
 }
 #side ul li ul li p{
     font-size: 0.8em;
@@ -160,7 +151,7 @@ iframe{
     border: 5px double var(--bording-color);
     border-radius: 30px;
 }
-@media screen and (max-width:1250px){
+@media only screen and (max-width:1250px){
     iframe{
         width: 280px;
         height: 162.5px;
@@ -175,22 +166,53 @@ hr{
 
 
 
-
+.click{
+    cursor:pointer;
+}
+.list{
+    position: relative;
+    display: contents;
+    text-align: center;
+}
 
 #hederimg{
     margin: 30px auto;
-    width: 500px;
+    max-width: 500px;
     height: 111px;
     display:flex;
     text-decoration: underline;
     color: #c0c0c0;
 }
+@media screen and (max-width:768px){
+    #hederimg img{
+        display: none;
+    }
+    #hederimg{
+        justify-content: center;
+    }
+    .content{
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 25px;
+    }
+    #mainpage{
+        margin-bottom: 0;
+    }
+    #side{
+        max-width: 200px;
+        margin-inline: auto;
+        margin-bottom: 10vh;
+    }
+}
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background: url('image/Lava_strip_TDS_GN.png') right center no-repeat;
     background-color: rgb(47, 124, 40);
     background-size: cover;
+    border-radius: 0 5px 5px 0;
 }
 ::-webkit-scrollbar {
     width: 10px;
