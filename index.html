@@ -8,8 +8,6 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/EC-logo.ico">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8055255980424353"
-     crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,34 +20,25 @@
     <div class="content">
         
         <article id="mainpage">
-            <div id="heder"><h1 class="S2"><i>Saison 2</i></h1></div>
-            <section>
-                <iframe src="https://www.youtube.com/embed/JOzstXFsrh0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep19</iframe>
-                <iframe src="https://www.youtube.com/embed/y3L73W37LCo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep18</iframe>
-                <iframe src="https://www.youtube.com/embed/JVbL09_0_9A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep17</iframe>
-                <iframe src="https://www.youtube.com/embed/pSbspy6le4M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep16</iframe>
-                <iframe src="https://www.youtube.com/embed/ywdE22frnXE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep15</iframe>
-                <iframe src="https://www.youtube.com/embed/fYl3fLSrm7c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep14</iframe>
-                <iframe src="https://www.youtube.com/embed/YUeDr6MuK-o" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep13</iframe>
-                <iframe src="https://www.youtube.com/embed/9aO-EChZfRs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep12</iframe>
-                <iframe src="https://www.youtube.com/embed/-9mVwpG6VC0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep11</iframe>
-                <iframe src="https://www.youtube.com/embed/tMiFgKNome0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep10</iframe>
-            </section>
-                <div id="heder"><h1 class="S1"><i>Saison 1</i></h1></div>
-            <section>
-                <iframe src="https://www.youtube.com/embed/bskMYyHvgfQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>anonce</iframe>
-                <iframe src="https://www.youtube.com/embed/LpBI3xnXflE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep9</iframe>
-                <iframe src="https://www.youtube.com/embed/2OrNuUs3uwk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep8</iframe>
-                <iframe src="https://www.youtube.com/embed/I8mC_HyFdMw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep7</iframe>
-                <iframe src="https://www.youtube.com/embed/5IDIObGwJao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep6</iframe>
-                <iframe src="https://www.youtube.com/embed/Mc0TeX0CQXE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>hs1</iframe>
-                <iframe src="https://www.youtube.com/embed/nQZNdL-aC_0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep5</iframe>
-                <iframe src="https://www.youtube.com/embed/p7G6L8eFiwM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep4</iframe>
-                <iframe src="https://www.youtube.com/embed/gL8RjKUglwY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep3</iframe>
-                <iframe src="https://www.youtube.com/embed/Rt3IECXEWyg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep2</iframe>
-                <iframe src="https://www.youtube.com/embed/-bpTRGiSrRo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>ep1</iframe>
-            </section>
+
+            <div class="tabs">
+                <button class="tab-link button-style active" onclick="openTab(event, 'channel1')">TFWolf</button> <!--btn tf-->
+                <!-- <button class="tab-link button-style" onclick="openTab(event, 'channel2')">Channel 2</button> -->
+              </div>
+
+            <div id="channel1" class="tab" style="display: block;">
+                <div id="heder"><h1 class="S2"><i>Vidéos de TFWolf</i></h1></div>
+                <div id="channel1-videos"></div>
+            </div>
+            
+            <!-- <div id="channel2" class="tab">
+                <div id="heder"><h1 class="S1"><i>Vidéos de </i></h1></div>
+                <div id="channel2-videos"></div>
+            </div> -->
+
         </article>
+
+        <script src="script.js"></script>
         
         <article id="side">
             <ul> <!--Membres-->
@@ -82,9 +71,9 @@
             <ul> <!--maps-->
                 <li><img src="image/Hamburger_Menu.svg" width="20">Maps DL
                     <ul class="list">
-                        <li><img src="image/Map DL icon.png" width="25"><a href="https://www.mediafire.com/file/rrnx6svvahqiwe1/Experimental_craft_S1.zip/file" download="">Saison 1</a></li>
+                        <li><img src="image/Map DL icon.png" width="25"><a href="https://www.mediafire.com/file/rrnx6svvahqiwe1/Experimental_craft_S1.zip/file" target="_blank">Saison 1</a></li>
                         <hr>
-                        <li><img src="image/Map DL icon.png" width="25"><a href="" style="text-decoration: line-through;" ><!--<img src="download-button-svgrepo-com.svg" width="20">-->Saison 2</a></li>
+                        <li><img src="image/Map DL icon.png" width="25"><a href="https://www.mediafire.com/file/facv8jtfm7ps7fx/Experimental_craft_S2.zip/file" target="_blank">Saison 2</a></li>
                     </ul>
                 </li>
             </ul>
@@ -96,18 +85,7 @@
                 </li>
             </ul>
         </article>
+
     </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8055255980424353"
-     crossorigin="anonymous"></script>
-<!-- block 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8055255980424353"
-     data-ad-slot="3938849934"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 </body>
 </html>
