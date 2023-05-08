@@ -58,8 +58,8 @@ a{
 }
 .S1{
     margin: auto;
-    width: 8rem;
-    background: -webkit-linear-gradient(-90deg, #eee, #555);
+    width: 20rem;
+    background: -webkit-linear-gradient(-85deg, #eee, #555);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline;
@@ -69,7 +69,7 @@ a{
 }
 .S2{
     margin: auto;
-    width: 8rem;
+    width: 16rem;
     background: -webkit-linear-gradient(-90deg, #91642b 10%, #fae187  50%, #5c3d14 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,13 +96,24 @@ a{
     overflow: auto;
     height: 70vh;
     margin-bottom: 10vh;
+    border-top-left-radius: 0;
 }
 #mainpage section{
     display: grid;
     justify-content: center;
     grid-row-gap: 15px;
 }
-
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1.5em;
+}
+.video div{
+    max-width: 25em;
+   font-size: 80%;
+   margin-inline: 2em;
+}
 
 #side img{
     margin-right: 10px;
@@ -152,8 +163,8 @@ a{
     border-radius: 15px;
 }
 iframe{
-    width: 560px;
-    height: 315px;
+    width: 20em;
+    height: 11.5em;
     border: 5px double var(--bording-color);
     border-radius: 30px;
 }
@@ -169,8 +180,6 @@ hr{
     height: 1px;
     background-color: var(--bording-color);
 }
-
-
 
 .click{
     cursor:pointer;
@@ -229,4 +238,36 @@ hr{
     border-radius: 5px;
     background-size: cover;
     box-shadow: 0px 0px 30px rgb(230, 198, 15);
+}
+
+.button-style {
+    /* background-color: rgba(145, 184, 127, 0.5);
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-inline: 0.0em;
+    border-radius: 0 0 0.5em 0.5em;
+    font-family: village;
+    font-weight: bold; */
+
+    background-color: rgb(107 155 84);
+    /* border: 1px solid black; */
+    border: var(--box-border);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-inline: 0em;
+    border-radius: 0.5em 0.5em 0 0;
+    font-family: village;
+    font-weight: bold;
+}
+
+.button-style:hover{
+    background-color: rgba(84, 122, 66, 1);
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 6.35em;
 }
