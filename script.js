@@ -1,6 +1,6 @@
   const channels = [
       { id: 'UCA13xSMV2Tq3T5qrUQJ1GRg', name: 'Channel 1', tag: 'ExperimentalCraft,EC+-shorts+-live' },
-      //{ id: 'UClNcLRbbty_rs6tQsmQTiuA', name: 'Channel 2', tag: '-none' }
+      { id: 'UClNcLRbbty_rs6tQsmQTiuA', name: 'Channel 2', tag: 'EC+-shorts+-live' }
     ];
 
     const apiKey = 'AIzaSyDPXPKzbAWuXaXMjq-DQwsIC6JrXemr1DE'; // replace with your YouTube API key
